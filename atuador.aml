@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile FileName="atuador.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML Editor</WriterName>
+			<WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>4.1.6</WriterVersion>
+			<WriterRelease>4.1.6.0</WriterRelease>
+			<LastWritingDateTime>2016-04-04T10:40:09</LastWritingDateTime>
+			<WriterProjectTitle>unspecified</WriterProjectTitle>
+			<WriterProjectID>unspecified</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<InstanceHierarchy Name="InstanceHierarchy1">
+		<Version>1.0.0</Version>
+		<InternalElement Name="InstanceOfAtuador" RefBaseSystemUnitPath="SystemUnitClassLib1/Atuador" ID="5e0e8962-477a-43df-b566-b9c1001ee77f">
+			<InternalElement Name="Body" ID="0004693d-4685-4c50-89a9-344061b3f70e">
+				<InternalElement Name="TuboProtetorHaste" ID="de282e7b-d057-43e6-ad19-f1a91ed0fa96" />
+				<InternalElement Name="VolanteManual" ID="650eff86-3ec7-45a8-b431-68e2e43b25ef"></InternalElement>
+				<InternalElement Name="PlacaCPU" ID="3a78013e-9ff4-4e8d-8da1-a70a75e8411b"> 
+				</InternalElement>
+				<InternalElement Name="BotaoComando" ID="d1cede99-6e7d-4324-b339-555af94f3afe" />
+				<InternalElement Name="BotaoSeletora" ID="f956136a-09e2-4e58-b1f2-e139dcb64e05" />
+				<InternalElement Name="PlacaRepetidoraInteligente" ID="c8955c87-3055-4932-8e32-24475d121241" />
+				<InternalElement Name="PlacaRepetidora" ID="2bc9329a-3570-4ce0-91e9-75e6e549512c" />
+				<InternalElement Name="DisplayLCD" ID="a9156b58-ef2e-4cbb-85f2-a40bcfb61014" />
+			</InternalElement>
+			<InternalElement Name="Eletronics" ID="b2f04429-e66f-4dbb-9e60-04be282b96ae">
+				<InternalElement Name="PlacaControladora" ID="1021771e-a8b9-47cd-89fa-e1b36f30a329">
+					<InternalElement Name="EntradasFasesAlimentacao" ID="4729a26f-e5a9-45a1-a2e9-2feaa3c411c1" />
+					<InternalElement Name="Saidas" ID="912421e8-a5eb-4bd9-8d1e-6ac27f94f364">
+						<InternalElement Name="SaidaContactoraA" ID="ab0c4bea-0b56-4f85-b6ca-4a64a2fab3b8" />
+						<InternalElement Name="SaidaContactoraB" ID="e575637b-5360-4443-85e1-ec0f0eb73c7d" />
+					</InternalElement>
+					<InternalElement Name="ChaveS1" ID="5dcc6246-d0f4-4dc4-aa13-06a421f180a0" />
+					<InternalElement Name="RTC" ID="c20d472c-00bf-4919-8dd9-10691a83ab61" />
+					<InternalElement Name="AnalogInput" ID="33e5515a-339f-4432-9831-e0712aa48afd">
+						<InternalElement Name="PositionSensor" ID="a1f5fc28-9852-4581-b16e-d213167f233a">
+							<Attribute Name="position" AttributeDataType="xs:float" />
+						</InternalElement>
+						<InternalElement Name="VoltageSensor" ID="d9405f22-019b-4dcf-8623-f39f009e5d44">
+							<Attribute Name="voltage" AttributeDataType="xs:float" />
+						</InternalElement>
+						<InternalElement Name="InternalTemperatureSensro" ID="339997e0-4099-454c-9486-1a485023158e">
+							<Attribute Name="temperature" AttributeDataType="xs:float" />
+						</InternalElement>
+					</InternalElement>
+					<InternalElement Name="MemoriaE2Prom" ID="51073b27-5932-42d2-b466-075eb5359bf2" />
+					<InternalElement Name="MemoriaRAM" ID="9a98e398-6e6e-419c-b711-f4c174e86e9d" />
+					<InternalElement Name="MemoriaEPROM" ID="969f95ad-fd5d-4569-975d-19b333193416" />
+					<InternalElement Name="Batery" ID="ecd2b87f-5166-48bb-979b-dcecc64ff482">
+						<Attribute Name="batery_level" AttributeDataType="xs:float" />
+					</InternalElement>
+					<InternalElement Name="EntradasDiscretas" ID="1d6c0aa5-8b6b-4695-b159-796f1539b5d4">
+						<InternalElement Name="ChavesPainel" ID="19a1d74b-3886-4a90-beca-5ae3259b17f7">
+							<InternalElement Name="SensorSobreaquecimentoMotor" ID="80fc94fc-d4cf-4423-8509-ba0c0f157dc7" />
+							<InternalElement Name="SensorContatoAuxiliarContadora" ID="73cab99f-9476-45f2-8635-724ba94453ac" />
+						</InternalElement>
+						<InternalElement Name="SensorsobreaquecimentoMotor" ID="01ddf434-3d3f-4eb9-ad1a-196b2eb27992" />
+						<InternalElement Name="SensorContatoAuxiliarContactora" ID="2953cc0a-038b-44d7-8427-b976f6e674c0" />
+					</InternalElement>
+				</InternalElement>
+			</InternalElement>
+			<SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+		<Description>Standard Automation Markup Language Interface Class Library</Description>
+		<Version>2.2.0</Version>
+		<InterfaceClass Name="AutomationMLBaseInterface">
+			<InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="Direction" AttributeDataType="xs:string" />
+			</InterfaceClass>
+			<InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+				<InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector" />
+				<InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector" />
+			</InterfaceClass>
+			<InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+				<InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+			</InterfaceClass>
+		</InterfaceClass>
+	</InterfaceClassLib>
+	<RoleClassLib Name="AutomationMLBaseRoleClassLib">
+		<Description>Automation Markup Language base role class library</Description>
+		<Version>2.2.0</Version>
+		<RoleClass Name="AutomationMLBaseRole">
+			<RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute Name="AssociatedFacet" AttributeDataType="xs:string" />
+			</RoleClass>
+			<RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Port" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute Name="Direction" AttributeDataType="xs:string" />
+				<Attribute Name="Cardinality" AttributeDataType="xs:string">
+					<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+					<Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+				</Attribute>
+				<Attribute Name="Category" AttributeDataType="xs:string" />
+				<ExternalInterface Name="ConnectionPoint" ID="9942bd9c-c19d-44e4-a197-11b9edf264e7" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" />
+			</RoleClass>
+			<RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+				<RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+				<RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+				<RoleClass Name="ResourceStructure" RefBaseClassPath="Structure" />
+			</RoleClass>
+			<RoleClass Name="PropertySet" RefBaseClassPath="AutomationMLBaseRole" />
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="RoleClassLib1">
+		<Version>1.0.0</Version>
+		<RoleClass Name="BotoeiraComando">
+			<Revision>
+				<RevisionDate>2016-04-04T11:43:04.8875164</RevisionDate>
+				<AuthorName>Please enter your name</AuthorName>
+			</Revision> 
+		</RoleClass>
+	</RoleClassLib>
+	<SystemUnitClassLib Name="SystemUnitClassLib1">
+		<Version>1.0.0</Version>
+		<SystemUnitClass Name="Valvula">
+			<SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+		</SystemUnitClass>
+		<SystemUnitClass Name="Atuador">
+			<InternalElement Name="Body" ID="73cc5159-3d28-48da-94a3-71293ec5d84f">
+				<InternalElement Name="TuboProtetorHaste" ID="4b2c960c-c74b-4095-9ed4-c1fc1ac669ba" />
+				<InternalElement Name="VolanteManual" ID="79a0e8ca-160c-4351-b37b-5f5faac53110"></InternalElement>
+				<InternalElement Name="PlacaCPU" ID="82d3a1df-e838-4f83-97bb-b018312b7641"> 
+				</InternalElement>
+				<InternalElement Name="BotaoComando" ID="14753677-bc5c-4494-86e7-0a25732a01e1" />
+				<InternalElement Name="BotaoSeletora" ID="db81425f-3520-433e-a7c0-cbb78940c3da" />
+				<InternalElement Name="PlacaRepetidoraInteligente" ID="bf692a97-4792-4f01-a529-c96e183c233f" />
+				<InternalElement Name="PlacaRepetidora" ID="973ec461-05a6-4884-92f6-e39f0aa878f8" />
+				<InternalElement Name="DisplayLCD" ID="908d8a26-1bbd-4e40-aa59-8572c58e7035" />
+			</InternalElement>
+			<InternalElement Name="Eletronics" ID="996a4059-5695-4fc4-aca4-8d3fde202878">
+				<InternalElement Name="PlacaControladora" ID="f080afaa-82ef-46ae-8b10-097a4a01c63d">
+					<InternalElement Name="EntradasFasesAlimentacao" ID="00eb08aa-0453-4038-b87f-768e25b540f0" />
+					<InternalElement Name="Saidas" ID="382a0f66-aed1-4277-ac7b-d9b0350537c3">
+						<InternalElement Name="SaidaContactoraA" ID="6158cf6f-c09a-4561-a319-19579ee968bc" />
+						<InternalElement Name="SaidaContactoraB" ID="f35f04fd-286c-4b53-9f22-7fb2cd106943" />
+					</InternalElement>
+					<InternalElement Name="ChaveS1" ID="3fb16a92-7b2d-45f8-8b40-2c5debab3ee2" />
+					<InternalElement Name="RTC" ID="6622c5b6-dc2f-47d9-a377-76ab603762d6" />
+					<InternalElement Name="AnalogInput" ID="5d8fee8c-5fe0-4234-b221-0bf8e67b4061">
+						<InternalElement Name="PositionSensor" ID="3ec39f99-ddc0-42b9-afb6-a4723ed38493">
+							<Attribute Name="position" AttributeDataType="xs:float" />
+						</InternalElement>
+						<InternalElement Name="VoltageSensor" ID="86d332a8-63c2-4187-838d-e3e5122b70e2">
+							<Attribute Name="voltage" AttributeDataType="xs:float" />
+						</InternalElement>
+						<InternalElement Name="InternalTemperatureSensro" ID="30d426e4-9d31-4edc-a913-297b8d4e8b35">
+							<Attribute Name="temperature" AttributeDataType="xs:float" />
+						</InternalElement>
+					</InternalElement>
+					<InternalElement Name="MemoriaE2Prom" ID="8fa35693-8a7d-4ecd-b221-440c014893d5" />
+					<InternalElement Name="MemoriaRAM" ID="9a1fb3f0-bd6f-4e7d-8679-10673068d7f0" />
+					<InternalElement Name="MemoriaEPROM" ID="61a4a984-5be6-47ca-b8f4-78243eb197dd" />
+					<InternalElement Name="Batery" ID="05134f02-16ab-4196-afd4-350b39884d06">
+						<Attribute Name="batery_level" AttributeDataType="xs:float" />
+					</InternalElement>
+					<InternalElement Name="EntradasDiscretas" ID="38ad100f-9855-4e7f-a894-2ab0ec36e7cb">
+						<InternalElement Name="ChavesPainel" ID="3298c8b8-114b-456a-ae87-49087aa7c755">
+							<InternalElement Name="SensorSobreaquecimentoMotor" ID="d798b444-e3e7-4553-af51-0d96119d1877" />
+							<InternalElement Name="SensorContatoAuxiliarContadora" ID="c674019a-3b79-43f4-8f8a-6d23f681353e" />
+						</InternalElement>
+						<InternalElement Name="SensorsobreaquecimentoMotor" ID="86b47a6d-697c-4185-83ef-27a8d98f9ceb" />
+						<InternalElement Name="SensorContatoAuxiliarContactora" ID="bf4abf4a-35ca-412b-8aa0-10e59ad28b3c" />
+					</InternalElement>
+				</InternalElement>
+			</InternalElement>
+			<SupportedRoleClass RefRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+		</SystemUnitClass>
+	</SystemUnitClassLib>
+</CAEXFile>
